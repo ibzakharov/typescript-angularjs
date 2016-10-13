@@ -1,0 +1,13 @@
+{
+  "name": "angular-project-template",
+  "version": "false",
+  "dependencies": {},
+  "globalDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160320081937",
+    "jquery": "registry:dt/jquery#1.10.0+20160316155526",
+    "gulp": "registry:dt/gulp#3.8.0+20160316155526",
+    "node": "registry:dt/node#6.0.0+20160514165920",
+    "orchestrator": "registry:dt/orchestrator#0.0.0+20160316155526",
+    "q": "registry:dt/q#0.0.0+20160417152954"
+  }
+}

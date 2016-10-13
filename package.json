@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "name": "typescript-angularjs",
+  "private": true,
+  "scripts": {
+    "postinstall": "bower install && typings install"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

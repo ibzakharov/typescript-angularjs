@@ -1,0 +1,13 @@
+node_modules/
+obj/
+typings/
+bower_components/
+*.js
+*.css
+.vs/
+bin/
+*.user
+*.map
+web.Debug.config
+web.Release.config
+*.html

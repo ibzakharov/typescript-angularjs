@@ -13,10 +13,7 @@ function pipelineFunction() {
     return gulp
         .src(jadeFiles)
         .pipe(jade({ doctype: 'html', pretty: true }).on('error', console.log))
-        .pipe(rename(filepath => {
-            filepath.extname = ".html";
-            console.log(filepath);
-        }))
+        .pipe(rename(filepath => filepath.extname = ".html"))
         .pipe(gulp.dest(''));
 };
 

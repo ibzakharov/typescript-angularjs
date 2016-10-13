@@ -1,18 +1,18 @@
 ﻿doctype html
 html
-  head
-    meta(charset='utf-8')
-    title Typescript AngularJS
-    
-    link(rel='stylesheet', href='http://kendo.cdn.telerik.com/2016.3.914/styles/kendo.material.min.css')
-    link(rel='stylesheet', href='http://kendo.cdn.telerik.com/2016.3.914/styles/kendo.common-material.min.css')
-    script(src='http://code.jquery.com/jquery-1.12.4.min.js')
-    script(src='http://kendo.cdn.telerik.com/2016.3.914/js/angular.min.js')
-    script(src='http://kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js')
-    
-    include _scripts.jade
-    
-    script(src="app.ts")
-  body
-    div(ng-app='app', ng-controller='MyCtrl')
-      kendo-grid(k-data-source='source', k-editable='true', k-pageable='true', k-columns="columns")
+    head
+        meta(charset="utf-8")
+        title Typescript AngularJS
+        
+        link(rel="stylesheet", href="http://kendo.cdn.telerik.com/2016.3.914/styles/kendo.material.min.css")
+        link(rel="stylesheet", href="http://kendo.cdn.telerik.com/2016.3.914/styles/kendo.common-material.min.css")
+        script(src="http://code.jquery.com/jquery-1.12.4.min.js")
+        script(src="http://kendo.cdn.telerik.com/2016.3.914/js/angular.min.js")
+        script(src="http://kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js")
+        
+        include _scripts.jade
+        
+        script(src="app.js")
+    body(ng-app="app")
+        div(ng-controller="MainCtrl as vm")
+            kendo-grid(k-data-source="vm.dataSource" k-editable="true" k-pageable="true" k-columns="vm.columns")

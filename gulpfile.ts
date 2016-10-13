@@ -8,3 +8,19 @@ namespace Jade {
     export const name = 'jade';
     gulp.task(name, jade);
 }
+
+
+namespace Default {
+    'use strict';
+    export const name = 'default';
+
+    let jadeFiles = [
+        '**/*.jade',
+        '!node_modules/**/*',
+        '!bower_components/**/*'
+    ];
+
+    gulp.task(name, () => {
+        gulp.watch(jadeFiles, [Jade.name]);
+    });
+}
